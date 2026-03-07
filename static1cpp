@@ -1,0 +1,38 @@
+#include<iostream>
+using namespace std;
+class temp
+{
+    int z;
+    static int y;
+
+public:
+    temp ();
+    void show();
+    void disaplay();
+};
+int x;
+int temp::y;
+void temp::show()
+{
+    y++;
+}
+temp::temp()
+{
+    z=200;
+    x=100;
+    cout<<"value of z is"<<z<<endl;
+}
+void temp::disaplay()
+{
+    cout<<"value of the x is"<<x<<endl;
+    cout<<"value of the y is"<<y<<endl;
+}
+int main()
+{
+    temp t;
+    t.show();
+    t.show();
+    t.disaplay();
+    cout<<sizeof (t);
+}
+
